@@ -1,6 +1,6 @@
-import React from 'react'
 import TaskEmptyState from './TaskEmptyState';
-import TaskCard from './TaskCard';
+import TaskCard from './TaskCard.jsx';
+
 
 
 const TaskList = () => {
@@ -27,9 +27,9 @@ const TaskList = () => {
     return (
         <div className='space-y-3'>
             {
-                filteredTasks.map((task) => (
+                filteredTasks.map((task, index) => (
                     <div key={task._id}>
-                        <TaskCard task={task} />
+                        <TaskCard task={task} index={index} />
                     </div>
                 ))
             }

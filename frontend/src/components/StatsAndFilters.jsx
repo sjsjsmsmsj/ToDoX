@@ -31,6 +31,7 @@ const StatsAndFilters = ({ completedTasksCount = 0, activeTasksCount = 0, filter
                         size='sm'
                         className='capitalize'
                     >
+                        {type}
                         <Filter className='size-4' />
                     </Button>
                 ))}
